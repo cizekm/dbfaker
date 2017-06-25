@@ -1,0 +1,32 @@
+connection:
+	driver: pdo
+	host: localhost
+	port: 3306
+	user: localuser
+	password: localpass
+	database: dbname
+
+faker:
+	provider: cs_CZ
+	tables:
+		customers:
+			key: id
+			columns:
+				email: email
+				login:
+					type: username
+					unique: true
+				password:
+					type: md5password
+					password: pass # random
+				first_name: firstName
+				last_name: lastName
+				note:
+					type: text(150)|string
+						optional: true
+						probability: 0.3
+						preserveEmpty: false
+				last_login_timestamp: dateTime('2014-02-25 08:37:17')
+				last_login_ip: ipv4
+
+
