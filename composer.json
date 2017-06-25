@@ -1,0 +1,23 @@
+{
+    "name": "cizekm/dbfaker",
+    "description": "PHP library that \"fakes\" data in specified database tables and columns",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Miroslav Cizek"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "fzaninotto/faker": "^1.6",
+        "nette/neon": "^2.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "DbFaker\\": [
+                "src/"
+            ]
+        }
+    }
+}
